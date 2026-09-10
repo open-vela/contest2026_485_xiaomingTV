@@ -1,0 +1,15 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config LVX_USE_DEMO_CONTEST2026_485_MIANYU
+	bool "Contest 2026 team 485 mianyu (active sleep aid)"
+	default n
+	---help---
+		Enable the contest 2026 team 485 "安眠科技 · 主动式哄睡智能体" app.
+		床头主动式哄睡硬件：到点主动引导、感知入睡自动淡出、
+		夜醒不亮屏安抚、记住睡眠偏好长期调整。
+
+		依赖 AI Agent（主动任务 + Skill）与 LVGL（呼吸光晕 UI，可选）。
+		音频为端侧实时合成（白/粉/棕噪），不依赖 MP3 解码。
